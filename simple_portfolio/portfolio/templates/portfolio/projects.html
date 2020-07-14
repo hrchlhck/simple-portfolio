@@ -7,16 +7,18 @@
         <p>This is the projects page.</p>
     </div>
     <br>
-    <div>
+    <div class="projects">
         {% if projects %}
             {% for proj in projects %}
-                <h2> 
-                    <a href="{{ proj.url }}" target="_blank"> 
-                        {{ proj.name }}
-                    </a>
-                </h2>
-                <p> {{ proj.description }}</p>
-                <img src="{{ proj.img.url }}" alt="">
+                <div class="project">
+                    <h2> 
+                        <a href="{{ proj.url }}" target="_blank"> 
+                            {{ proj.name }}
+                        </a>
+                    </h2>
+                    <p> {{ proj.description }}</p>
+                    <img src="{{ proj.img.url }}" alt="" id="project_image">
+                </div>
             {% endfor %}
         {% else %}
             <h2> No projects available</h2>
