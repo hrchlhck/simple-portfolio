@@ -1,24 +1,22 @@
 {% extends 'portfolio/base.html' %}
 {% block title %}
-    Projects
+    | Projects
 {% endblock %}
 {% block content %}
     <div>
         <p>This is the projects page.</p>
     </div>
     <br>
-    <div class="projects">
+    <div>
         {% if projects %}
             {% for proj in projects %}
-                <div class="project">
-                    <h2> 
-                        <a href="{{ proj.url }}" target="_blank"> 
-                            {{ proj.name }}
-                        </a>
-                    </h2>
-                    <p> {{ proj.description }}</p>
-                    <img src="{{ proj.img.url }}" alt="" id="project_image">
-                </div>
+                <h2> 
+                    <a href="{{ proj.url }}" target="_blank"> 
+                        {{ proj.name }}
+                    </a>
+                </h2>
+                <p> {{ proj.description }}</p>
+                <img src="{{ proj.img.url }}" alt="">
             {% endfor %}
         {% else %}
             <h2> No projects available</h2>

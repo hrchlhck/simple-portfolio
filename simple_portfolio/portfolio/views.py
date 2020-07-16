@@ -10,3 +10,5 @@ class Projects(ListView):
     model = Project
     context_object_name = 'projects'
     
+class CV(TemplateView):
+    template_name = 'portfolio/cv.html'
