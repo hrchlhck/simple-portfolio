@@ -91,9 +91,24 @@ img {
     .topnav {font-size:2px;}
 }
 
+.projects {
+    margin-bottom: -20px;
+}
+
 .project {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    column-count: 2;
+    padding:2%;
+    line-height: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+.project img {
+    height: 100%;
+    width: 200px;
+    max-width: 100%;
+    float: right;
 }
 
 .cv-list {

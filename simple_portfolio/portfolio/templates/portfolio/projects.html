@@ -3,23 +3,27 @@
     | Projects
 {% endblock %}
 {% block content %}
-    <div>
-        <p>This is the projects page.</p>
-    </div>
-    <br>
-    <div>
-        {% if projects %}
-            {% for proj in projects %}
-                <h2> 
-                    <a href="{{ proj.url }}" target="_blank"> 
-                        {{ proj.name }}
-                    </a>
-                </h2>
-                <p> {{ proj.description }}</p>
-                <img src="{{ proj.img.url }}" alt="">
-            {% endfor %}
-        {% else %}
-            <h2> No projects available</h2>
-        {% endif %}
+    <div class="content">
+        <div class="projects">
+            {% if projects %}
+                {% for proj in projects %}
+                    <div class="project">
+                        <div class="project-column">
+                            <h2> 
+                                <a href="{{ proj.url }}" target="_blank"> 
+                                    {{ proj.name }}
+                                </a>
+                            </h2>
+                            <p> {{ proj.description }}</p>
+                        </div>
+                        <div class="project-column">
+                            <img class="project-image" src="{{ proj.img.url }}" title="{{ proj.name }}" alt="Image of {{ proj.name }}">
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <h2> No projects available</h2>
+            {% endif %}
+        </div>
     </div>
 {% endblock %}
