@@ -147,3 +147,7 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.pinned {
+    color: rgba(0, 0, 0, 0.4);
+}
