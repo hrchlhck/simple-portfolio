@@ -112,8 +112,10 @@ figure {
 
 @media screen and (max-width: 600px) {
     .index-text {width: 100%;}
-    .content {font-size:12px;}
-    .topnav {font-size:2px;}
+    .content {font-size: 12px;}
+    .topnav a {font-size: 12px; padding: 6px 8px 6px 12px;}
+    .project {line-height: 5px;}
+    .project h2{font-size: 14px;}
 }
 
 .projects {
@@ -158,4 +160,8 @@ figure {
 
 .pinned {
     color: rgba(0, 0, 0, 0.4);
+}
+
+li:before {
+    content: '- ';
 }
