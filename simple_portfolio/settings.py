@@ -124,6 +124,9 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'portfolio/static')
+STATIC_ROOT = 'staticfiles'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'portfolio/media')
+
+import django_heroku
+django_heroku.settings(locals())
