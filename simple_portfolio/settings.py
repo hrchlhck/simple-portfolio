@@ -23,11 +23,9 @@ try:
     from local_settings import sk
     SECRET_KEY = sk
 except:
-    pass
+    SECRET_KEY = os.environ['SECRET_KEY']
 
-SECRET_KEY = os.environ['SECRET_KEY']
-
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     '*'
