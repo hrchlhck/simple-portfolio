@@ -15,13 +15,6 @@ html {
     scroll-behavior: smooth;
 }
 
-img {
-    width: 640px;
-    height: 100%;
-    align-content: center;
-    pointer-events: none;
-}
-
 figure {
     display: inline-block;
 }
@@ -101,14 +94,16 @@ figure {
     width: 400px;
     max-width: 100%;
     float: right;
-}
-
-.index-content figure {
-    float: right;
+    border-radius: 100%;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
 }
 
 .index-text {
     clear: both;
+}
+
+.index-text p {
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -153,11 +148,6 @@ figure {
     color: #4f5d75;
     text-decoration: underline;
     text-decoration-color: rgba(79, 93, 117, 0.4);
-}
-
-.responsive {
-    max-width: 100%;
-    height: auto;
 }
 
 .pinned {

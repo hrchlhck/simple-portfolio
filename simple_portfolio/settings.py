@@ -25,7 +25,7 @@ try:
 except:
     SECRET_KEY = os.environ['SECRET_KEY']
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     '*'
