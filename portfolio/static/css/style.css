@@ -15,10 +15,6 @@ html {
     scroll-behavior: smooth;
 }
 
-figure {
-    display: inline-block;
-}
-
 .container {
     margin-left: var(--content-margin);
     margin-right: var(--content-margin);
@@ -92,10 +88,10 @@ figure {
 .index-content img {
     height: 100%;
     width: 400px;
-    max-width: 100%;
     float: right;
     border-radius: 100%;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
 }
 
 .index-text {
@@ -126,13 +122,16 @@ figure {
     margin-bottom: 20px;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
     background-color: white;
+    overflow: hidden;
 }
 
-.project img {
+.project-image {
     height: 100%;
-    width: 200px;
-    max-width: 100%;
+    width: 250px;
     float: right;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    max-width: 100%;
 }
 
 .cv-list {
@@ -178,4 +177,8 @@ li:before {
 .footer-text:hover {
     font-weight: bold;
     color: rgba(0, 0, 0, 1);
+}
+
+.page-description {
+    margin-bottom: 15px;
 }
